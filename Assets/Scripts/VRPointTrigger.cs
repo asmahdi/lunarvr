@@ -10,7 +10,7 @@ public class VRPointTrigger : MonoBehaviour {
 	public string[] openRoute;
 	public string[] closeRoute;
 
-	public Image LoadingShape;
+	public GameObject LoadingShape;
 	public float loadingSpeed;
 	public GameObject TargetFixedEffect;
 	public GameObject NextActiveTarget;
@@ -19,10 +19,11 @@ public class VRPointTrigger : MonoBehaviour {
 	public GameObject NextDeactiveSubTarget;
 
 
+
 	private bool gazedAt;
 	private bool loaded;
 
-	// Use this for initialization
+
 	void Start () {
 
 		gazedAt = false;
@@ -32,43 +33,49 @@ public class VRPointTrigger : MonoBehaviour {
 
 	void OnEnable()
 	{
-		LoadingShape.fillAmount = 0;
+		LoadingShape.GetComponent<Image>().fillAmount = 0;
 	}
 	
-	// Update is called once per frame
+
 	 public void SetGazedAt(bool isGazed) {
 		this.gazedAt = isGazed;
-	  
-	  
+
     }
 
 	void Update(){
-
-		if (gazedAt)
-	  {
-		 
-
-		  if (LoadingShape.fillAmount != 1f)
-        {
-            LoadingShape.fillAmount = LoadingShape.fillAmount + Time.deltaTime * loadingSpeed;
-        }
-	  }
-	  else{
-		   if (LoadingShape.fillAmount != 0f)
+	
+			if (gazedAt)
 			{
-				LoadingShape.fillAmount = LoadingShape.fillAmount - Time.deltaTime * loadingSpeed*10;
-			}	
-	  }
+				if (LoadingShape.GetComponent<Image>().fillAmount != 1f)
+				{
+					LoadingShape.GetComponent<Image>().fillAmount = LoadingShape.GetComponent<Image>().fillAmount + Time.deltaTime * loadingSpeed;
+				}
+			}
+			else{
+				if (LoadingShape.GetComponent<Image>().fillAmount != 0f)
+				{
+					LoadingShape.GetComponent<Image>().fillAmount = LoadingShape.GetComponent<Image>().fillAmount - Time.deltaTime * loadingSpeed*10;
+				}	
+			}
 
-		if (LoadingShape.fillAmount == 1)
-		{
-			loaded = true;
-			gazedAt = false;
-		}
-		else 
-		{
-			loaded = false;
-		}
+
+
+
+			if (LoadingShape.GetComponent<Image>().fillAmount == 1)
+				{
+					loaded = true;
+					gazedAt = false;
+				}
+			else 
+				{
+					loaded = false;
+				}
+		
+		
+
+
+
+
 
 		if (loaded)
 		{
@@ -80,7 +87,9 @@ public class VRPointTrigger : MonoBehaviour {
 			{
 				Player.GetComponent<Animator>().SetFloat(closeRoute[i],-1);
 			}
-			// Instantiate(TargetFixedEffect,gameObject.transform.position,gameObject.transform.rotation);
+			
+			
+
 			if (NextActiveTarget != null)
 			{
 				NextActiveTarget.SetActive(true);
@@ -99,7 +108,6 @@ public class VRPointTrigger : MonoBehaviour {
 				NextDeactiveSubTarget.SetActive(false);
 			}
 			
-			// Destroy(this.gameObject);
 
 
 		}
