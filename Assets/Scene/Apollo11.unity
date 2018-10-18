@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &21657959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +749,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8b12e3bd836377429a3fda064a7785a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.145
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1128,7 +1128,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e7d6fb382d608df46b31714e8570a44b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1325,6 +1325,129 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 32.59, z: 0}
+--- !u!1 &672487029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 672487030}
+  - component: {fileID: 672487031}
+  - component: {fileID: 672487032}
+  m_Layer: 0
+  m_Name: LunaStartup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672487030
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672487029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &672487031
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672487029}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 03d82890109b0b3429fade97cfa3842a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &672487032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672487029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8577a834e5d4f004e8adad0f1e792c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LunaVoice: {fileID: 672487031}
+  ToActive: {fileID: 21657958}
 --- !u!1 &740240466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1650,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 824540883}
+  - component: {fileID: 824540884}
   m_Layer: 5
   m_Name: Inspector (2)
   m_TagString: Untagged
@@ -1555,6 +1679,19 @@ RectTransform:
   m_AnchoredPosition: {x: 2.16, y: 8.35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &824540884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824540882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8577a834e5d4f004e8adad0f1e792c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LunaVoice: {fileID: 550657576}
+  ToActive: {fileID: 1700825708}
 --- !u!1 &840985659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1786,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 910173069}
+  - component: {fileID: 910173070}
   m_Layer: 5
   m_Name: Inspector (3)
   m_TagString: Untagged
@@ -1677,6 +1815,19 @@ RectTransform:
   m_AnchoredPosition: {x: 16.62, y: 8.35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &910173070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 910173068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8577a834e5d4f004e8adad0f1e792c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LunaVoice: {fileID: 1304096634}
+  ToActive: {fileID: 21657958}
 --- !u!1 &967087238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +2094,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3b8f041cb7fc76749b12a1548f4a86d3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2392,7 +2543,7 @@ RectTransform:
   m_GameObject: {fileID: 1256304949}
   m_LocalRotation: {x: 0, y: 0.04013178, z: 0, w: 0.99919444}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1700825709}
   m_RootOrder: 0
@@ -2533,7 +2684,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b6477a1cc4026584b870e1bb9143096d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3253,7 +3404,7 @@ MonoBehaviour:
   loadingSpeed: 1
   TargetFixedEffect: {fileID: 0}
   NextActiveTarget: {fileID: 910173068}
-  NextActiveSubTarget: {fileID: 21657958}
+  NextActiveSubTarget: {fileID: 0}
   NextDeactiveTarget: {fileID: 1700825708}
   NextDeactiveSubTarget: {fileID: 824540882}
 --- !u!135 &1700825712
@@ -3276,6 +3427,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1739423073}
+  - component: {fileID: 1739423074}
   m_Layer: 5
   m_Name: Inspector (1)
   m_TagString: Untagged
@@ -3304,6 +3456,19 @@ RectTransform:
   m_AnchoredPosition: {x: -5.47, y: 14.09}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1739423074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1739423072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8577a834e5d4f004e8adad0f1e792c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LunaVoice: {fileID: 1085569888}
+  ToActive: {fileID: 1798326525}
 --- !u!1 &1798326525
 GameObject:
   m_ObjectHideFlags: 0

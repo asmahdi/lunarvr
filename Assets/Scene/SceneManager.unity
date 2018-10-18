@@ -355,7 +355,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7e5da90e48bd248803304a20e144e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgMusic: {fileID: 0}
+  bgMusic: {fileID: 751017679}
 --- !u!1001 &1260991322
 Prefab:
   m_ObjectHideFlags: 0

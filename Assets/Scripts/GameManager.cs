@@ -20,7 +20,10 @@ public class GameManager : MonoBehaviour {
 
 		if(SceneManager.GetActiveScene().name == "Menu" || SceneManager.GetActiveScene().name == "SceneManager")
 		{
-			bgMusic.Play();
+			if(!bgMusic.isPlaying)
+			{
+				bgMusic.Play();
+			}
 		}
 		else
 		{
