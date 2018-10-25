@@ -290,20 +290,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.0022689488
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.99999744
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20897866757693590, guid: f0874a7d1c80e39408baf91374043e7e,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500799754031744, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54918531777641742, guid: f0874a7d1c80e39408baf91374043e7e, type: 2}
@@ -450,7 +462,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 543595013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2560, y: 1913, z: -3456}
+  m_LocalPosition: {x: 2973.12, y: 1913, z: -3456}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 89419998}
@@ -722,7 +734,7 @@ LensFlare:
   m_Flare: {fileID: 12100000, guid: 1b8cbb37f206944c7bc235686d0cb229, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Brightness: 1
-  m_FadeSpeed: 1.2
+  m_FadeSpeed: 1.5
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 6

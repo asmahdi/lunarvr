@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 
 	private int menuShowCount;
 
+	private float pressedTime;
+
 	// Use this for initialization
 	void Start () {
 		DontDestroyOnLoad(this);
@@ -18,7 +20,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(SceneManager.GetActiveScene().name == "Menu" || SceneManager.GetActiveScene().name == "SceneManager")
+		if(SceneManager.GetActiveScene().name == "Menu" || SceneManager.GetActiveScene().name == "VRSceneManager")
 		{
 			if(!bgMusic.isPlaying)
 			{
@@ -44,11 +46,16 @@ public class GameManager : MonoBehaviour {
 			menuShowCount++;
 		}
 
-		if(menuShowCount ==2 )
-		{
-			SceneManager.LoadSceneAsync("Menu");
-			menuShowCount = 0;
-		}
+		
+
+	
+		
+		
+		 if (menuShowCount == 2)
+        {
+            SceneManager.LoadSceneAsync("Menu");
+            menuShowCount = 0;
+        }
 
 		if(menuShowCount == 1)
 		{
@@ -64,4 +71,6 @@ public class GameManager : MonoBehaviour {
 	{
 		menuShowCount = 0;
 	}
+
+	
 }

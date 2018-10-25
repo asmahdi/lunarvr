@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/SceneManager.unity
+    path: Assets/Scene/Home.unity
+    guid: 0eb8e58462a7054468dec17d21fd57af
+  - enabled: 1
+    path: Assets/Scene/VRSceneManager.unity
     guid: a0c27c89983bbb14ca1cd8a82f5658df
   - enabled: 1
     path: Assets/Scene/Menu.unity
@@ -17,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Apollo11.unity
     guid: 343862ab66927bd4f97386b545de86e1
+  - enabled: 1
+    path: Assets/Scene/Eclipse.unity
+    guid: f7df3c02f2a90f747b256125195142d2
