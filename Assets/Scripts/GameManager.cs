@@ -41,36 +41,36 @@ public class GameManager : MonoBehaviour {
 		{
 			Application.Quit();
 		}
-		if(Input.GetMouseButtonUp(0))
-		{
-			menuShowCount++;
-		}
+		// if(Input.GetMouseButtonUp(0))
+		// {
+		// 	menuShowCount++;
+		// }
 
 		
 
 	
 		
 		
-		 if (menuShowCount == 2)
-        {
-            SceneManager.LoadSceneAsync("Menu");
-            menuShowCount = 0;
-        }
+		//  if (menuShowCount == 2)
+        // {
+        //     SceneManager.LoadSceneAsync("Menu");
+        //     menuShowCount = 0;
+        // }
 
-		if(menuShowCount == 1)
-		{
-			Invoke("Reset",1);
-		}
+		// if(menuShowCount == 1)
+		// {
+		// 	Invoke("Reset",1);
+		// }
 
 
 		
 	}
 
 
-	public void Reset()
-	{
-		menuShowCount = 0;
-	}
+	// public void Reset()
+	// {
+	// 	menuShowCount = 0;
+	// }
 
 	
 }

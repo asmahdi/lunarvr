@@ -37,7 +37,7 @@ public class VRPointTrigger : MonoBehaviour {
 	}
 	
 
-	 public void SetGazedAt(bool isGazed) {
+	public void SetGazedAt(bool isGazed) {
 		this.gazedAt = isGazed;
 
     }
@@ -85,7 +85,7 @@ public class VRPointTrigger : MonoBehaviour {
 			}
 			for (int i =0 ; i < closeRoute.Length ; i++)
 			{
-				Player.GetComponent<Animator>().SetFloat(closeRoute[i],-1);
+				Player.GetComponent<Animator>().SetFloat(closeRoute[i],0);
 			}
 			
 			
