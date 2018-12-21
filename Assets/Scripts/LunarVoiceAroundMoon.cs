@@ -7,6 +7,7 @@ public class LunarVoiceAroundMoon : MonoBehaviour {
 	public AudioSource copernicus;
 	public AudioSource aitken;
 	public AudioSource maria;
+	public AudioSource temperature;
 
 	public GameObject copernicusSpot;
 	public GameObject aitkenSpot;
@@ -61,6 +62,10 @@ public class LunarVoiceAroundMoon : MonoBehaviour {
 			else if(col.gameObject.tag == "maria")
 			{
 				maria.Play();
+			}
+			else if(col.gameObject.tag == "Temperature")
+			{
+				temperature.Play();
 			}
 		}
 

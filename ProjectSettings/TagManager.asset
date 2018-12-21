@@ -9,6 +9,7 @@ TagManager:
   - copernicus
   - aitken
   - maria
+  - Temperature
   layers:
   - Default
   - TransparentFX
